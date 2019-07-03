@@ -5,12 +5,4 @@
   <groupId>re.alwyn974</groupId>
   <artifactId>openlauncherlib</artifactId>
   <version>3.0.4</version>
-  <dependencies>
-    <dependency>
-      <groupId>re.alwyn974.mineweb</groupId>
-      <artifactId>MinewebAuthAPI</artifactId>
-      <version>1.0.0</version>
-      <scope>runtime</scope>
-    </dependency>
-  </dependencies>
 </project>
