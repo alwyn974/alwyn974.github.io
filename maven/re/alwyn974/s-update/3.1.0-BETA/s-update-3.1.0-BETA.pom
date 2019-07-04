@@ -14,7 +14,7 @@
     </dependency>
     <dependency>
       <groupId>re.alwyn974</groupId>
-      <artifactId>Logger</artifactId>
+      <artifactId>logger</artifactId>
       <version>1.0.0</version>
       <scope>runtime</scope>
     </dependency>
