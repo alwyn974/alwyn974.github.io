@@ -1,6 +1,15 @@
 {
   "homepage": "https://github.com/alwyn974/DRP/releases",
+  "<mcversion>": {
+    "1.12.2": "Update to 1.12.2",
+    "1.13.2": "Update to 1.13.2",
+    "1.14.4": "Update to 1.14.4",
+    "1.15.2": "Update to 1.15.2"
+  },
   "promos": {
-    "1.13.2-latest": "1.0.0"
+    "1.12.2-latest": "1.12.2",
+    "1.13.2-latest": "1.0.0",
+    "1.14.4-latest": "1.0.0",
+    "1.15.2-latest": "1.0.0",
   }
 }
