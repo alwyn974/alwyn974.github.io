@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,30 +156,42 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#checkValidity--">checkValidity</a></span>()</code>
+<div class="block">Check the validity of the command <br>
+ 
+ name can't be null
+ usage can't be null
+ description can't be null
+ executor can't be null
+ </div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#withDescription-java.lang.String-">withDescription</a></span>(java.lang.String&nbsp;description)</code>
 <div class="block">Add a description to the Command</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#withExecutor-re.alwyn974.minecraft.bot.cmd.utils.IExecutor-">withExecutor</a></span>(<a href="../../../../../re/alwyn974/minecraft/bot/cmd/utils/IExecutor.html" title="interface in re.alwyn974.minecraft.bot.cmd.utils">IExecutor</a>&nbsp;executor)</code>
 <div class="block">Add the executor of the command</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#withName-java.lang.String-">withName</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Add a name to the Command</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#withNeedToBeConnected-boolean-">withNeedToBeConnected</a></span>(boolean&nbsp;needToBeConnected)</code>
 <div class="block">Specify if the command can only be used on a server</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#withUsage-java.lang.String-">withUsage</a></span>(java.lang.String&nbsp;usage)</code>
 <div class="block">Add an usage to the Command</div>
@@ -307,7 +319,7 @@ extends java.lang.Object</pre>
 <a name="build--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
 <pre>public&nbsp;<a href="../../../../../re/alwyn974/minecraft/bot/cmd/utils/ICommand.html" title="interface in re.alwyn974.minecraft.bot.cmd.utils">ICommand</a>&nbsp;build()
@@ -317,7 +329,30 @@ extends java.lang.Object</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an <a href="../../../../../re/alwyn974/minecraft/bot/cmd/utils/ICommand.html" title="interface in re.alwyn974.minecraft.bot.cmd.utils"><code>ICommand</code></a> object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilderException.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilderException</a></code> - if the command doesn't match the requirement <a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#checkValidity--"><code>checkValidity()</code></a></dd>
+<dd><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilderException.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilderException</a></code> - if the command doesn't match the requirement</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilder.html#checkValidity--"><code>checkValidity()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="checkValidity--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>checkValidity</h4>
+<pre>protected&nbsp;void&nbsp;checkValidity()
+                      throws <a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilderException.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilderException</a></pre>
+<div class="block">Check the validity of the command <br>
+ <ul>
+ <li>name can't be null</li>
+ <li>usage can't be null</li>
+ <li>description can't be null</li>
+ <li>executor can't be null</li>
+ </ul></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../re/alwyn974/minecraft/bot/builder/CommandBuilderException.html" title="class in re.alwyn974.minecraft.bot.builder">CommandBuilderException</a></code> - if the command doesn't match the requirement</dd>
 </dl>
 </li>
 </ul>
